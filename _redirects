@@ -1,0 +1,4 @@
+# Serve the recipe landing page while keeping the shared slug in the address bar.
+/r/index.html /r/ 308
+/r/:slug /r/ 200
+/r/:slug/ /r/ 200

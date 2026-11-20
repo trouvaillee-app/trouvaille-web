@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trouvaille: Camera &amp; Editor</title>
+    <meta
+      name="description"
+      content="Trouvaille is a film camera, photo editor, and composition studio for iPhone."
+    />
+    <meta property="og:title" content="Trouvaille: Camera &amp; Editor" />
+    <meta
+      property="og:description"
+      content="Preview film looks as you shoot, develop your photos on your iPhone, and compose them as prints or strips."
+    />
+    <meta property="og:image" content="assets/photos/herosection.webp" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top 2px Scroll Progress Bar -->
+    <div class="progress-bar" id="progressBar" aria-hidden="true">
+      <div class="progress-bar__fill" id="progressFill"></div>
+    </div>
+
+    <!-- Floating Liquid Glass Wide Pill Navbar (Reveals past Hero) -->
+    <header class="floating-nav" id="floatingNav" aria-label="Primary Navigation">
+      <nav class="floating-nav__inner liquid-glass-clear">
+        <a href="#top" class="floating-nav__brand" aria-label="Trouvaille home">
+          <span class="floating-nav__word">Trouvaille</span>
+        </a>
+        <div class="floating-nav__links">
+          <a href="#stills" data-nav="stills">Stills</a>
+          <a href="#gallery" data-nav="gallery">Templates</a>
+          <a href="#creed" data-nav="creed">Craft</a>
+          <a href="#faq" data-nav="faq">FAQ</a>
+        </div>
+        <a href="mailto:trouvaillee.app@gmail.com?subject=Trouvaille%20iOS%20Access" class="pill-btn chromatic-metal floating-nav__cta">
+          <span>Get Access</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- ───────────── SECTION 01: HERO ───────────── -->
+      <section class="hero" id="hero">
+        <div class="hero__bg" id="heroBg" aria-hidden="true">
+          <img src="assets/photos/herosection.webp" alt="" fetchpriority="high" />
+          <div class="hero__scrim"></div>
+        </div>
+
+        <div class="hero__topline">
+          <span>Film Camera &amp; Editor</span>
+          <span>In the quiet light.</span>
+        </div>
+
+        <!-- Bottom Architectural Block: Quiet Tagline + Monumental Wordmark -->
+        <div class="hero__bottom" id="heroText">
+          <p class="hero__tagline">
+            A quiet 35mm camera, darkroom, and editorial studio—crafted for directional light, honest grain, and frames that linger.
+          </p>
+          <h1 class="hero__wordmark">TROUVAILLE</h1>
+        </div>
+      </section>
+
+      <!-- ───────────── SUBTLE EDITORIAL MARQUEE ───────────── -->
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>13 Film Emulsions</span><span>·</span>
+          <span>Dual Preset 2×</span><span>·</span>
+          <span>18 Organic Optics</span><span>·</span>
+          <span>Double Exposure</span><span>·</span>
+          <span>16 Editorial Frames</span><span>·</span>
+          <span>2K Print Export</span><span>·</span>
+          <span>100% On-Device</span><span>·</span>
+          <span>Part of Syntheticae Group</span><span>·</span>
+          <span>13 Film Emulsions</span><span>·</span>
+          <span>Dual Preset 2×</span><span>·</span>
+          <span>18 Organic Optics</span><span>·</span>
+          <span>Double Exposure</span><span>·</span>
+          <span>16 Editorial Frames</span><span>·</span>
+          <span>2K Print Export</span><span>·</span>
+          <span>100% On-Device</span><span>·</span>
+          <span>Part of Syntheticae Group</span><span>·</span>
+        </div>
+      </section>
+
+      <!-- ───────────── SECTION 02: FILM STILLS EXHIBITION ───────────── -->
+      <section class="stills-section" id="stills">
+        <div class="container">
+          <div class="stills-header reveal">
+            <div>
+              <div class="eyebrow">
+                <span class="dot"></span>
+                <span>(N°01) · FLOWER &amp; ARCHITECTURE</span>
+              </div>
+              <h2 class="section-title">
+                Light with <em>direction.</em><br />
+                Color with <em>intent.</em>
+              </h2>
+            </div>
+            <p class="section-sub">
+              A selection from the Flower and Architecture archives, where light traces the edges of petals, concrete, and glass.
+            </p>
+          </div>
+
+          <figure class="still-hero reveal">
+            <img
+              class="still-photo"
+              src="assets/stills/contour.webp"
+              srcset="assets/stills/contour-small.webp 768w, assets/stills/contour.webp 1600w"
+              sizes="(max-width: 1320px) calc(100vw - 40px), 1280px"
+              width="1600"
+              height="670"
+              loading="lazy"
+              decoding="async"
+              alt="Sweeping terracotta cladding around an opening of blue sky."
+            />
+            <figcaption class="still-caption"><span>01 / <em>Contour</em></span><span>ARCHITECTURE</span></figcaption>
+          </figure>
+
+          <div class="stills-triptych reveal">
+            <figure class="still-card">
+              <img class="still-photo" src="assets/stills/white-bloom.webp" width="720" height="900" loading="lazy" decoding="async" alt="A pale flower with translucent petals against a dark background." />
+              <figcaption class="still-caption"><span>02 / <em>White Bloom</em></span><span>FLOWER</span></figcaption>
+            </figure>
+
+            <figure class="still-card still-card--offset">
+              <img class="still-photo" src="assets/stills/bending-stem.webp" width="720" height="900" loading="lazy" decoding="async" alt="Pink blossoms and a bent green stem on a pale backdrop." />
+              <figcaption class="still-caption"><span>03 / <em>Bending Stem</em></span><span>FLOWER</span></figcaption>
+            </figure>
+
+            <figure class="still-card">
+              <img class="still-photo" src="assets/stills/folded-concrete.webp" width="720" height="900" loading="lazy" decoding="async" alt="Curving concrete ramps in black and white, seen from below." />
+              <figcaption class="still-caption"><span>04 / <em>Folded Concrete</em></span><span>ARCHITECTURE</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="stills-diptych reveal">
+            <figure class="still-card">
+              <img class="still-photo" src="assets/stills/wildflowers.webp" width="960" height="672" loading="lazy" decoding="async" alt="Wildflowers in a wooded clearing with an amber light leak at the edge." />
+              <figcaption class="still-caption"><span>05 / <em>Wildflowers</em></span><span>FLOWER</span></figcaption>
+            </figure>
+
+            <figure class="still-card">
+              <img class="still-photo" src="assets/stills/room-of-light.webp" width="960" height="672" loading="lazy" decoding="async" alt="Light falling between textured concrete walls and a dark timber railing." />
+              <figcaption class="still-caption"><span>06 / <em>Room of Light</em></span><span>ARCHITECTURE</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── SECTION 03: TROUVAILLE CREED ───────────── -->
+      <section class="creed-section" id="creed">
+        <div class="container creed-inner reveal">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span>(MMXXVI) · THE TROUVAILLE CREED</span>
+          </div>
+          <blockquote class="creed-quote">
+            “We built a camera that stays out of the way—so <em>directional light</em>,
+            <em>honest grain</em>, and <em>quiet space</em> can carry the frame.”
+          </blockquote>
+          <div class="creed-tenets liquid-glass">
+            <span>100% On-Device Grading</span>
+            <span class="creed-sep">·</span>
+            <span>Zero Photo Uploads</span>
+            <span class="creed-sep">·</span>
+            <span>Part of Syntheticae Group</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── SECTION 04: TEMPLATE GALLERY ───────────── -->
+      <section class="gallery-section" id="gallery">
+        <div class="container">
+          <div class="gallery-head reveal">
+            <div>
+              <div class="eyebrow eyebrow--light">
+                <span class="dot"></span>
+                <span>(N°02) · 16 EDITORIAL TEMPLATES</span>
+              </div>
+              <h2 class="section-title section-title--dark">
+                Framed like an <em>exhibition.</em>
+              </h2>
+            </div>
+            <p class="section-sub section-sub--dark">
+              Finished prints, film strips, and cinematic diptychs—with customizable titles,
+              captions, 4 museum paper stocks, per-slot pan &amp; zoom reframing, and 2K export.
+            </p>
+          </div>
+
+          <div class="cosmos-bar reveal" id="galleryFilters" role="group" aria-label="Template categories">
+            <button type="button" class="cosmos-pill liquid-glass-light is-active" data-filter="all" aria-pressed="true">
+              <img src="assets/photos/hill-village.jpg" alt="" />
+              <span>Curated · 16</span>
+            </button>
+            <button type="button" class="cosmos-pill liquid-glass-light" data-filter="cinema" aria-pressed="false">
+              <img src="assets/photos/last-train.jpg" alt="" />
+              <span>Cinema Stills</span>
+            </button>
+            <button type="button" class="cosmos-pill liquid-glass-light" data-filter="editorial" aria-pressed="false">
+              <img src="assets/photos/blood-orange.jpg" alt="" />
+              <span>Editorial Prints</span>
+            </button>
+            <button type="button" class="cosmos-pill liquid-glass-light" data-filter="strip" aria-pressed="false">
+              <img src="assets/photos/rain-bus.jpg" alt="" />
+              <span>Film Strips</span>
+            </button>
+            <button type="button" class="cosmos-pill liquid-glass-light" data-filter="archive" aria-pressed="false">
+              <img src="assets/photos/concrete-passage.jpg" alt="" />
+              <span>Darkroom Archive</span>
+            </button>
+          </div>
+
+          <div class="museum-grid reveal" id="museumGrid">
+            <article class="museum-item" data-cat="cinema">
+              <div class="tpl-art tpl-press">
+                <img src="assets/photos/volcanic-shore.jpg" alt="Press template upper still" loading="lazy" />
+                <div class="tpl-press__band">
+                  <small>DIRECTED BY YOU · AUTUMN ISSUE</small>
+                  <strong>After the rain</strong>
+                </div>
+                <img src="assets/photos/last-train.jpg" alt="Press template lower still" loading="lazy" />
+              </div>
+              <div class="museum-meta"><strong>Press</strong><span>2 frames · 4:5</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="editorial">
+              <div class="tpl-art tpl-exhibition">
+                <div class="tpl-exhibition__top"><span>(09)</span><span>ARCHIVE · 2026</span><span>(2026)</span></div>
+                <div class="tpl-exhibition__row">
+                  <img src="assets/photos/tideline.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/hill-village.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/concrete-passage.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="tpl-exhibition__title">Chronicles</div>
+              </div>
+              <div class="museum-meta"><strong>Exhibition</strong><span>3 frames · 4:5</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="strip">
+              <div class="tpl-art tpl-art--chromatic"><div class="tpl-instant">
+                <img src="assets/photos/rain-bus.jpg" alt="" class="tpl-instant__bg" loading="lazy" />
+                <div class="tpl-instant__card">
+                  <span>20 NOV 2026 · 35MM</span>
+                  <img src="assets/photos/rain-bus.jpg" alt="Instant Polaroid template" loading="lazy" />
+                  <em>After hours</em>
+                </div>
+              </div></div>
+              <div class="museum-meta"><strong>Instant</strong><span>1 frame · 9:16</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="editorial">
+              <div class="tpl-art tpl-monograph">
+                <div class="tpl-monograph__rail"><em>Field notes</em></div>
+                <div class="tpl-monograph__col">
+                  <img src="assets/photos/blood-orange.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/rain-bus.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/last-train.jpg" alt="" loading="lazy" />
+                </div>
+              </div>
+              <div class="museum-meta"><strong>Monograph</strong><span>3 frames · 9:16</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="cinema">
+              <div class="tpl-art tpl-art--chromatic"><div class="tpl-monolith">
+                <div class="tpl-monolith__top"><span>TROUVAILLE</span><span>EDITION 01</span><span>35MM</span></div>
+                <div class="tpl-monolith__body">
+                  <em class="tpl-monolith__left">The Confession</em>
+                  <img src="assets/photos/concrete-passage.jpg" alt="Monolith poster template" loading="lazy" />
+                  <span class="tpl-monolith__right">2026. 11. 20</span>
+                </div>
+              </div></div>
+              <div class="museum-meta"><strong>Monolith</strong><span>1 frame · 4:5</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="editorial">
+              <div class="tpl-art tpl-interlude">
+                <img src="assets/photos/hill-village.jpg" alt="Interlude story template" loading="lazy" />
+                <div class="tpl-interlude__rule"><span></span></div>
+                <div class="tpl-interlude__foot"><em>Quiet afternoon</em><small>NO. 01</small></div>
+              </div>
+              <div class="museum-meta"><strong>Interlude</strong><span>1 frame · 9:16</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="strip">
+              <div class="tpl-art tpl-sprocket">
+                <div class="tpl-sprocket__strip">
+                  <img src="assets/photos/concrete-passage.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/hill-village.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/tideline.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/last-train.jpg" alt="" loading="lazy" />
+                </div>
+              </div>
+              <div class="museum-meta"><strong>Sprocket</strong><span>4 frames · 9:16</span></div>
+            </article>
+
+            <article class="museum-item" data-cat="archive">
+              <div class="tpl-art tpl-proof">
+                <div class="tpl-proof__head"><em>Contact study</em><span>PROOF · 04</span></div>
+                <div class="tpl-proof__grid">
+                  <img src="assets/photos/concrete-passage.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/lit-window.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/tideline.jpg" alt="" loading="lazy" />
+                  <img src="assets/photos/last-train.jpg" alt="" loading="lazy" />
+                </div>
+              </div>
+              <div class="museum-meta"><strong>Proof</strong><span>4 frames · 4:5</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────────── SECTION 05: FAQ ACCORDION ───────────── -->
+      <section class="faq-section" id="faq">
+        <div class="container faq-wrap">
+          <div class="reveal">
+            <div class="eyebrow eyebrow--light">
+              <span class="dot"></span>
+              <span>(N°03) · COMMON QUESTIONS</span>
+            </div>
+            <h2 class="section-title section-title--dark">
+              Using <em>Trouvaille.</em>
+            </h2>
+          </div>
+
+          <div class="faq-list reveal" id="faqList">
+            <div class="faq-item is-open">
+              <button type="button" class="faq-q" aria-expanded="true" aria-controls="faq-account">
+                <span>Can I use Trouvaille without an account?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-account">
+                <div class="faq-a__body">
+                  <p>Yes. You can take a photo or import one from your iPhone library, adjust its look in Develop, and arrange it in Compose. Your photos and finished pieces are available in Roll, and you can export at standard quality while signed out.</p>
+                  <p>Sign in when you want to publish a recipe or access Trouvaille Pro.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-uploads">
+                <span>What happens to my photos and shared recipes?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-uploads" inert>
+                <div class="faq-a__body">
+                  <p>Trouvaille processes your photos on your iPhone. When you save or share an export, you choose where it goes.</p>
+                  <p>A published recipe contains the settings for a film look and profile attribution. People with the link can view that information, while the source photo stays on your device. The <a href="privacy.html" class="text-link">Privacy Policy</a> explains how Trouvaille handles account and purchase data.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-pro">
+                <span>What does Trouvaille Pro include?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-pro" inert>
+                <div class="faq-a__body">
+                  <p>Pro adds Dual Preset, which lets you layer two looks, and full-resolution photo export in Develop. The camera, standard editing tools, and composition layouts are available without Pro.</p>
+                  <p>Pro plans include monthly and yearly subscriptions and a one-time Lifetime purchase. The Trouvaille Pro screen shows the plans, billing periods, and prices provided by the App Store for your region.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-restore">
+                <span>How do I restore or manage a Pro purchase?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-restore" inert>
+                <div class="faq-a__body">
+                  <p>Sign in to Trouvaille and go to <strong>Profile → Trouvaille Pro → Restore Purchases</strong>. Make sure your iPhone is using the Apple Account that made the original purchase.</p>
+                  <p>You can manage or cancel a subscription from your Apple Account. See the <a href="terms.html" class="text-link">Terms &amp; Conditions</a> for details on renewal, cancellation, and refunds.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-delete">
+                <span>How do I delete my account?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-a" id="faq-delete" inert>
+                <div class="faq-a__body">
+                  <p>While signed in, go to <strong>Profile → Delete Account</strong> and confirm. This removes your Trouvaille account, creator profile, and published recipes. You can remove photos and compositions from Roll separately.</p>
+                  <p>If you have a subscription, manage it through Apple to stop future renewals. The <a href="privacy.html#choices" class="text-link">Privacy Policy</a> explains what happens to your data and how to contact support if you cannot sign in.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ───────────── SECTION 06: MEGA ARCHITECTURAL FOOTER (SYNTHETICAE GROUP) ───────────── -->
+    <footer class="mega-footer" id="contact">
+      <div class="container">
+        <div class="footer-hero reveal">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span>(N°04) · PART OF SYNTHETICAE GROUP · MMXXVI</span>
+          </div>
+          <h2 class="footer-title">
+            Make something<br />
+            <em>quiet</em> and permanent.
+          </h2>
+          <div class="footer-cta-row" id="download">
+            <a href="mailto:trouvaillee.app@gmail.com" class="footer-mail-pill chromatic-metal">
+              <span>trouvaillee.app@gmail.com</span>
+              <span class="footer-mail-pill__icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-grid">
+          <div>
+            <h4>01 · Product</h4>
+            <ul>
+              <li><a href="#stills">Shot on Trouvaille</a></li>
+              <li><a href="#gallery">16 Editorial Templates</a></li>
+              <li><a href="#creed">The Creed</a></li>
+              <li><a href="#faq">Common Questions</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>02 · Legal &amp; Support</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="support.html">Support &amp; Help</a></li>
+              <li><a href="/r/">Shared Recipes</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>03 · Syntheticae Group</h4>
+            <ul>
+              <li><span>Part of Syntheticae Group</span></li>
+              <li><span>Independent Software Atelier</span></li>
+              <li><span>100% On-Device Architecture</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4>04 · Direct Contact</h4>
+            <ul>
+              <li><a href="mailto:trouvaillee.app@gmail.com">trouvaillee.app@gmail.com</a></li>
+              <li><a href="mailto:trouvaillee.app@gmail.com?subject=Trouvaille%20Press">Press &amp; Collaborations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-wordmark" aria-hidden="true">trouvaille</div>
+
+        <div class="footer-bottom">
+          <span>© 2026 Trouvaille · Part of Syntheticae Group</span>
+          <span class="footer-bottom__mid">A quiet 35mm camera &amp; editorial studio</span>
+          <a href="#top" class="footer-top-link">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

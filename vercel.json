@@ -1,0 +1,19 @@
+{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/r/:slug", "destination": "/r/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.css",
+      "headers": [{ "key": "Content-Type", "value": "text/css; charset=utf-8" }]
+    },
+    {
+      "source": "/(.*)\\.js",
+      "headers": [{ "key": "Content-Type", "value": "text/javascript; charset=utf-8" }]
+    }
+  ]
+}
