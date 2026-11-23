@@ -8,7 +8,7 @@ Official website for **Trouvaille: Camera & Editor**, a film camera, photo edito
 npx wrangler pages dev .
 ```
 
-This previews the static website and the recipe route defined in `_redirects`.
+This previews the static website and the retirement notice for legacy recipe URLs.
 
 ## Cloudflare Pages
 
@@ -21,6 +21,6 @@ Import this repository in Cloudflare Pages and use these build settings.
 | Build command | `exit 0` |
 | Build output directory | `.` |
 
-The public review pages are `/privacy`, `/terms`, and `/support`. Shared recipe links use `/r/<slug>`.
+The public review pages are `/privacy`, `/terms`, and `/support`.
 
 [Cloudflare Pages static HTML guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/)

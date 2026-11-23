@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shared Film Recipe | Trouvaille</title>
-    <meta name="description" content="Open and remix this film recipe on-device in Trouvaille, part of Syntheticae Group." />
+    <title>Film Recipe | Trouvaille</title>
+    <meta name="description" content="Trouvaille film recipes can be copied between photos in the app." />
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -13,14 +13,13 @@
       <div class="recipe-card liquid-glass">
         <div class="eyebrow">
           <span class="dot"></span>
-          <span>TROUVAILLE SHARED RECIPE</span>
+          <span>TROUVAILLE</span>
         </div>
         <h1 class="recipe-landing__title">Film Recipe</h1>
         <p class="recipe-landing__sub">
-          Open a shared recipe link on an iPhone with Trouvaille installed to try its film settings on your own photos.
+          This recipe link has been retired. In Trouvaille, you can copy a film look from one photo to another in Film settings.
         </p>
         <div class="recipe-landing__actions">
-          <a id="open-app-link" class="pill-btn chromatic-metal" hidden>Open in Trouvaille ↗</a>
           <a href="/" class="pill-btn pill-btn--ghost">Explore Trouvaille</a>
         </div>
         <p class="recipe-landing__foot">
@@ -28,18 +27,5 @@
         </p>
       </div>
     </main>
-    <script>
-      (function () {
-        const path = window.location.pathname;
-        const match = /^\/r\/([a-z0-9-]{1,80})\/?$/i.exec(path);
-        const query = new URLSearchParams(window.location.search).get("r");
-        const slug = /^\/r(?:\/index\.html)?\/?$/.test(path) ? query : match?.[1];
-        if (!slug || !/^[a-z0-9-]{1,80}$/i.test(slug)) return;
-
-        const link = document.getElementById("open-app-link");
-        link.href = "trouvaille://r/?r=" + encodeURIComponent(slug);
-        link.hidden = false;
-      })();
-    </script>
   </body>
 </html>
