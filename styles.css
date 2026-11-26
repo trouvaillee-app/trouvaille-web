@@ -698,7 +698,7 @@ em { font-style: italic; font-family: var(--font-serif); font-weight: 400; }
   background-clip: text;
   color: transparent;
 }
-.footer-cta-row { margin-top: 34px; }
+.footer-cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 34px; }
 .footer-mail-pill {
   display: inline-flex;
   align-items: center;
